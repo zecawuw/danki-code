@@ -10,7 +10,7 @@
 
 header{
     width: 100%;
-    background-color: #602577;
+    background-color: #110f17;
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -47,11 +47,11 @@ header #but_entrar{
     cursor: pointer;
     outline: none;
     padding: 8px;
-    border: #602577;
-    border-radius: 20px;
+    border: 1px solid #e1e1e6;
+    border-radius: 8px;
     box-shadow: none;
-    color: #602577;
-    background-color: aliceblue;
+    color: #e1e1e6;
+    background-color: rgba(0, 0, 0, 0);
     font-size: 12px;
     font-weight: 700;
 }
@@ -63,12 +63,43 @@ header #but_cadastro_header{
     cursor: pointer;
     outline: none;
     padding: 8px;
-    border: 1px solid aliceblue;
-    border-radius: 20px;
+    border: 1px solid #e1e1e6;
+    border-radius: 8px;
     box-shadow: none;
-    color: aliceblue;
-    background-color: #602577;
+    color: #e1e1e6;
+    background-color: #110f17;
     font-size: 12px;
+}
+
+
+#mobile_home{
+    width: 100%;
+    height: 300px;
+    background-color: #534874;
+    position:absolute;
+    top: 58px;
+    display: none;
+}
+
+
+@media screen and (max-width: 850px){
+    .web_header{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 850px){
+    #mobile_header{
+        display: none;
+        
+    }
+
+    
+
+    .material-symbols-outlined{
+        cursor: pointer !important;
+    }
+
 }
 
 /* FINAL DO HEADER */
@@ -86,13 +117,13 @@ header #but_cadastro_header{
 .sec_home > h2{
     font-size: 30px;
     margin: 30px 0;
-    color: aliceblue;
+    color: #e1e1e6;
 }
 
 .sec_home > h1{
     font-size: 50px;
     margin: 30px 0;
-    color: aliceblue;
+    color: #e1e1e6;
 }
 
 #but_cadastro_home{
