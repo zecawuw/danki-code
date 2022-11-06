@@ -16,6 +16,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    border-bottom: 1px solid #363142;
 }
 
 header h1{
@@ -23,6 +24,10 @@ header h1{
     left: 10px;
     font-size: 28px;
     color: aliceblue;
+}
+
+.web_header{
+    display: flex;
 }
 
 header ul{
@@ -81,23 +86,29 @@ header #but_cadastro_header{
     display: none;
 }
 
-
 @media screen and (max-width: 850px){
     .web_header{
         display: none;
     }
+    /* #mobile_header1{
+        display: none;
+        
+    } */
+    #mobile_header2{
+        display: none; 
+        font-size: 33px;
+    }
+
 }
 
 @media screen and (min-width: 850px){
-    #mobile_header{
-        display: none;
-        
-    }
+    
 
     
 
     .material-symbols-outlined{
         cursor: pointer !important;
+        display: none;
     }
 
 }
@@ -107,38 +118,64 @@ header #but_cadastro_header{
 /* COMEÇO DA HOME */
 
 .sec_home{
-    background-image: url("https://cursos.dankicode.com/app/Views/public/images/home/banner-home.png");
-    background-color: #232222;
+    background-color: #110f17;
     background-size: cover;
-    text-align: center;
-    padding: 110px 3%;
+    height: 100%;
+    padding: 113px 3%;
+    display: flex;
+    justify-content:space-around;
 }
 
-.sec_home > h2{
-    font-size: 30px;
-    margin: 30px 0;
-    color: #e1e1e6;
-}
-
-.sec_home > h1{
+.texto_home > h1{
+    width: 335px;
+    text-align: left;
     font-size: 50px;
     margin: 30px 0;
     color: #e1e1e6;
 }
 
 #but_cadastro_home{
+    width: 300px;
     margin: 24px 0;
     cursor: pointer;
-    margin-left: 30px;
     cursor: pointer;
     outline: none;
     padding: 8px;
-    border: 1px solid #602577;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #7855c3;
+    border-radius: 8px;
+    background-color: #7855c3;
     box-shadow: none;
-    color: #602577;
+    color: #fffffd;
     font-size: 25px;
+}
+
+.img-maior{
+    position: absolute;
+    z-index: 2;
+    width: 352px;
+    height: 400px;
+    right: 96px;
+    background-image: linear-gradient(rgba(120, 85, 195, 0.28) 0%, rgb(51, 30, 97) 100%), url(https://d1i4tvf70h7zdy.cloudfront.net/ead/images/hero/home/box_2.png);
+    border-radius: 24px;
+}
+
+.img-menor{
+    z-index: 3;
+    position: absolute;
+    width: 158px;
+    height: 241px;
+    right: 480px;
+    bottom: 0px;
+    background-image: linear-gradient(rgba(120, 85, 195, 0.28) 0%, rgb(51, 30, 97) 100%), url(https://d1i4tvf70h7zdy.cloudfront.net/ead/images/hero/home/box_1.png);
+    background-size: cover;
+    border-radius: 24px;
+}
+.img-texto{
+    z-index: 1;
+    width: 100%;
+    max-width: 500px;
+    top: 26px;
+    background-image: url(https://d1i4tvf70h7zdy.cloudfront.net/ead/images/hero/home/code.png);
 }
 
 
