@@ -6,6 +6,10 @@
     overflow: hidden;
 }
 
+body{
+    background-color: #110f17
+}
+
 /* COMEÇO DO HEADER */
 
 header{
