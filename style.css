@@ -80,16 +80,38 @@ header #but_cadastro_header{
     font-size: 12px;
 }
 
+/* mobile inicio */
 
 #mobile_home{
-    width: 100%;
-    height: 300px;
-    background-color: #534874;
+    width: 300px;
+    height: 100%;
+    background-color: #1a1821;
     position:absolute;
-    top: 58px;
     display: none;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
 }
 
+#mobile_home > h1{
+    position: relative;
+    left: 10px;
+    font-size: 28px;
+    margin: 50px;
+    color: aliceblue;
+}
+
+#mobile_home > ul > li{
+    margin: 10px;
+    background-color: #352950;
+    padding: 10px;
+    border-radius: 8px ;
+    color: #c1c1ca;
+}
+
+
+/* mobile fim*/
 
 /* FINAL DO HEADER */
 
@@ -101,7 +123,7 @@ header #but_cadastro_header{
     background-size: cover;
     width: 100%;
     height: 100%;
-    padding: 113px 3%;
+    padding: 83px 3%;
     display: flex;
     align-items: center;
     position: relative;
@@ -112,7 +134,7 @@ header #but_cadastro_header{
 .texto_home{
     z-index: 2;
     position: relative;
-    max-width: 335px;
+    max-width: 355px;
     width: 100%;
 }
 
@@ -212,7 +234,7 @@ header #but_cadastro_header{
 
     .img-texto{
         position:relative;
-        top: -414px;
+        top: -443px;
     }
 
     .sec_home{
@@ -221,12 +243,12 @@ header #but_cadastro_header{
 
     .texto_home{
         position: relative;
-        top: -45px;
+        top: -30px;
     }
 
 }
 
-@media screen and (max-width: 717px) {
+@media screen and (max-width: 741px) {
 
     .img-maior{
         display: none;
