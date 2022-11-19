@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
 }
 
 body{
@@ -21,6 +20,7 @@ header{
     justify-content: space-between;
     padding: 20px;
     border-bottom: 1px solid #363142;
+    overflow: hidden;
 }
 
 header h1{
@@ -162,7 +162,6 @@ header #but_cadastro_header{
     font-size: 18px;
 }
 
-
 /* mobile fim*/
 
 /* FINAL DO HEADER */
@@ -181,6 +180,7 @@ header #but_cadastro_header{
     position: relative;
     max-width: 1120px;
     justify-content:space-around;
+    overflow: hidden;
 }
 
 .texto_home{
@@ -252,6 +252,8 @@ header #but_cadastro_header{
 
 .home_cursos{
     display: flex;
+    flex-wrap: wrap;
+    overflow: auto !important;
 }
 
 .curso{
@@ -275,6 +277,191 @@ header #but_cadastro_header{
 }
 
 /* FINAL CURSOS */
+
+/* começo cadastro */
+
+.cadastro_home{
+    display: flex;
+    flex-direction: row;
+}
+
+.cadastro{
+    color: #e1e1e6;
+    width: 50%;
+    background: linear-gradient(rgba(104, 73, 170, 0.28) 0% ) 0% 0% / cover;
+}
+
+.cadastro-1{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    max-width: 352px;
+    margin: 0 auto;
+}
+
+.cadastro-1 > h3{
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.cadastro-1 > p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.img-cadastro{
+    height: 100vh;
+    width: 50%;
+    background: linear-gradient(rgba(104, 73, 170, 0.28) 0%, rgb(23, 15, 39) 100%) 0% 0% / cover, url(https://d1i4tvf70h7zdy.cloudfront.net/ead/images/auth/register.jpg) no-repeat;
+    background-size: cover;
+}
+
+.input-cadastro{
+    width: 100%;
+    min-width: 0px;
+    outline-offset: 2px;
+    position: relative;
+    appearance: none;
+    transition-duration: 200ms;
+    font-size: 0.875rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    height: 2.5rem;
+    background-color: #282433;;
+    border-style: solid;
+    border-image: initial;
+    border-color: #363142;;
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    margin-bottom: 30px;
+}
+
+.input-cadastro1{
+    width: 100%;
+    min-width: 0px;
+    outline-offset: 2px;
+    position: relative;
+    appearance: none;
+    transition-duration: 200ms;
+    font-size: 0.875rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    height: 2.5rem;
+    background-color: #fffffd;
+    border-style: solid;
+    border-image: initial;
+    border-color: #363142;;
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    margin-bottom: 30px;
+}
+
+#but_criar-conta{
+    width: 100px;
+    margin: 24px 0;
+    cursor: pointer;
+    cursor: pointer;
+    outline: none;
+    padding: 8px;
+    border: 1px solid #7855c3;
+    border-radius: 8px;
+    background-color: #7855c3;
+    box-shadow: none;
+    color: #fffffd;
+    font-size: 15px;
+}
+
+/* final cadastro */
+
+/* começo login */
+
+.login_home{
+    display: flex;
+    flex-direction: row;
+}
+
+.login{
+    color: #e1e1e6;
+    width: 50%;
+    background: linear-gradient(rgba(104, 73, 170, 0.28) 0% ) 0% 0% / cover;
+}
+
+.login-1{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    max-width: 352px;
+    margin: 0 auto;
+}
+
+.login-1 > h3{
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.login-1 > p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.img-login{
+    height: 100vh;
+    width: 50%;
+    background: linear-gradient(rgba(104, 73, 170, 0.28) 0%, rgb(23, 15, 39) 100%) 0% 0% / cover, url(https://d1i4tvf70h7zdy.cloudfront.net/ead/images/auth/login.jpg) no-repeat;
+    background-size: cover;
+}
+
+.input-login{
+    width: 100%;
+    min-width: 0px;
+    outline-offset: 2px;
+    position: relative;
+    appearance: none;
+    transition-duration: 200ms;
+    font-size: 0.875rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    height: 2.5rem;
+    background-color: #282433;;
+    border-style: solid;
+    border-image: initial;
+    border-color: #363142;;
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    margin-bottom: 30px;
+}
+
+#but_criar-conta{
+    width: 100px;
+    margin: 24px 0;
+    cursor: pointer;
+    cursor: pointer;
+    outline: none;
+    padding: 8px;
+    border: 1px solid #7855c3;
+    border-radius: 8px;
+    background-color: #7855c3;
+    box-shadow: none;
+    color: #fffffd;
+    font-size: 15px;
+}
+
+/* final login */
 
 /* COMEÇO DO MEDIA SCREEN */
 
@@ -301,11 +488,11 @@ header #but_cadastro_header{
 @media screen and (min-width: 990px){
     .material-symbols-outlined{
         cursor: pointer !important;
-        display: none;
+        display: none !important;
     }
 
     #mobile_home{
-        display: none;
+        display: none !important;
     }
 
 }
@@ -342,6 +529,54 @@ header #but_cadastro_header{
     .img-maior{
         display: none;
     }
+}
+
+@media screen and (max-width: 741px) {
+
+    .cadastro_home{
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        background-image: linear-gradient(180deg, rgba(93,62,160, 0.2) -50%, transparent 100%),url(https://d1i4tvf70h7zdy.cloudfront.net/ead/images/auth/register.jpg);
+        background-color: rgba(20,10,23, 0.99);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
+    }
+
+    .cadastro{
+        width: 100%;
+    }
+
+    .img-cadastro{
+        display: none;
+    }
+
+    .login_home{
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        background-image: linear-gradient(180deg, rgba(93,62,160, 0.2) -50%, transparent 100%),url(https://d1i4tvf70h7zdy.cloudfront.net/ead/images/auth/login.jpg);
+        background-color: rgba(20,10,23, 0.99);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
+    }
+
+    .login{
+        width: 100%;
+    }
+
+    .img-login{
+        display: none;
+    }
+
 }
 
 /* FIM DO MEDIA SCREEN */
